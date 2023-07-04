@@ -16,6 +16,8 @@
         .row-label {
             font-size: 4vw;
             font-size: 4vh;/* Responsive font size based on viewport width */
+            height: 50px;
+            align-items: center;
         }
         .auto-style2 {
             width: 100%;
@@ -40,6 +42,12 @@
         .container{
             margin-left:auto;
             margin-right:auto;
+        }
+        .auto-style7 {
+            width: 484px;
+        }
+        .auto-style9 {
+            width: 570px;
         }
     </style>
 </head>
@@ -72,6 +80,38 @@
             </tr>
         </table>
             </div>
+        <table class="auto-style2">
+            <tr>
+                <td class="auto-style7">
+                    <asp:Label ID="Label9" runat="server" Text="Job Seeker Login Area"></asp:Label>
+                </td>
+                <td class="auto-style9" rowspan="2">
+                    <asp:Label ID="Label10" runat="server" Text="ADVANCE SEARCH ZONE"></asp:Label>
+                </td>
+                <td>
+                    <asp:Label ID="Label11" runat="server" Text="Recruiter Login Area"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style7">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
