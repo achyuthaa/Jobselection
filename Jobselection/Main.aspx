@@ -6,18 +6,23 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
+        .cent{
+            text-align:center;
+        }
         .auto-style1 {
             width: 100%;
             height: auto;
             display: flex;
             justify-content: center;
             background-color:aquamarine;
+            border-radius: 5px;
         }
         .row-label {
             font-size: 4vw;
             font-size: 4vh;/* Responsive font size based on viewport width */
             height: 50px;
             align-items: center;
+            
         }
         .auto-style2 {
             width: 100%;
@@ -32,37 +37,61 @@
            
         }
         .row-label2{
-            display: block;
-            padding: 6px;
-            margin: 1px;
+            display:block;
+            padding: 4px;
+            margin: 0px;
             background-color:aquamarine;
             font-size: 3vw;
             font-size: 3vh;
             align-items:center;
             justify-content:center;
             text-align:center;
+            border-radius: 5px;
         }
         .container{
             margin-left:auto;
             margin-right:auto;
         }
         .auto-style8 {
-            width: 444px;
+            width: 393px;
         }
         .auto-style9 {
             width: 349px;
         }
-        .auto-style10 {
-            width: 161px;
+        .auto-style19 {
+            width: 13%;
         }
-        .auto-style11 {
-            width: 196px;
+        .auto-style20 {
+            width: 16%;
         }
-        .auto-style12 {
-            width: 152px;
+        .auto-style21 {
+            width: 12%;
         }
-        .auto-style13 {
-            width: 49px;
+        .auto-style22 {
+            width: 9%;
+        }
+        .auto-style23 {
+            width: 7%;
+        }
+        .auto-style24 {
+            width: 15%;
+        }
+        .auto-style26 {
+            width: 101px;
+        }
+        .auto-style27 {
+            width: 277px;
+        }
+        .auto-style30 {
+            width: 509px;
+            height: 327px;
+            margin-left: 19px;
+        }
+        .auto-style31 {
+            width: 747px;
+        }
+        .auto-style32 {
+            width: 374px;
         }
     </style>
 </head>
@@ -98,102 +127,206 @@
         <table class="auto-style2">
             <tr>
                 <td class="auto-style9">
-                    <asp:Label ID="Label9" CssClass="row-label2" runat="server" Text="Job Seeker Login Area" Width="344px"></asp:Label>
+                    <asp:Label ID="Label9" CssClass="row-label2" runat="server" Text="Job Seeker Login Area" Width="344px" style="height: 56px"></asp:Label>
                 </td>
-                <td class="auto-style8" rowspan="2">
-                    <asp:Label ID="Label10" CssClass="row-label2" runat="server" Text="ADVANCE SEARCH ZONE" Height="56px" Width="641px"></asp:Label>
+                <td class="auto-style8">
+                    <asp:Label ID="Label10" CssClass="row-label2" runat="server" Text="ADVANCE SEARCH ZONE" Height="56px" Width="484px"></asp:Label>
                 </td>
                 <td>
-                    <asp:Label ID="Label11" CssClass="row-label2" runat="server" Text="Recruiter Login Area"></asp:Label>
+                    <asp:Label ID="Label11" CssClass="row-label2" runat="server" Text="Recruiter Login Area" style="height: 56px"></asp:Label>
                 </td>
-            </tr>
-            <tr>
-                <td class="auto-style9">&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             </table>
         <table class="auto-style2">
             <tr>
-                <td class="auto-style10">
+                <td class="auto-style19">
                     <asp:Label ID="Label12" runat="server" Text="UserName"></asp:Label>
                 </td>
-                <td class="auto-style11">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <td class="auto-style20">
+                    <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </td>
-                <td class="auto-style12">
+                <td class="auto-style21">
                     <asp:Label ID="Label17" runat="server" Text="Category      :"></asp:Label>
                 </td>
-                <td class="auto-style13">
-                    <asp:ListBox ID="ListBox1" runat="server" Height="33px" Width="117px"></asp:ListBox>
+                <td class="auto-style22">
+                    <asp:ListBox ID="ListBox1" runat="server" Height="33px" Width="117px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged"></asp:ListBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style23">
+                    <asp:Label ID="Label19" runat="server" Text="Skill"></asp:Label>
+                </td>
+                <td class="auto-style24">
+                    <asp:ListBox ID="ListBox3" runat="server" Height="33px" Width="117px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged"></asp:ListBox>
+                </td>
+                <td colspan="2" class="cent">
+                    <asp:Label ID="Label20" runat="server" Text="Recruiter Login Area"></asp:Label>
+                </td>
             </tr>
             <tr>
-                <td class="auto-style10">
+                <td class="auto-style19">
                     <asp:Label ID="Label13" runat="server" Text="Password"></asp:Label>
                 </td>
-                <td class="auto-style11">
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <td class="auto-style20">
+                    <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
                 </td>
-                <td class="auto-style12">
+                <td class="auto-style21">
                     <asp:Label ID="Label18" runat="server" Text="Qualification :"></asp:Label>
                 </td>
-                <td class="auto-style13">
+                <td class="auto-style22">
                     <asp:ListBox ID="ListBox2" runat="server" Height="33px" Width="117px"></asp:ListBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style23">&nbsp;</td>
+                <td class="auto-style24">&nbsp;</td>
+                <td class="auto-style26">
+                    <asp:Label ID="Label21" runat="server" Text="UserName"></asp:Label>
+                </td>
+                <td class="auto-style24">
+                    <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                </td>
             </tr>
             <tr>
                 <td colspan="2" style="text-align:center;">
-                    <asp:Button ID="Button1" runat="server" Text="Login" Width="114px" />
+                    <asp:Button ID="Button1" runat="server" Text="Login" Width="114px"  OnClick="Button1_Click"/>
                 </td>
-                <td class="auto-style12">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style23">&nbsp;</td>
+                <td class="auto-style24">
+                    <asp:RadioButton ID="RadioButton1" runat="server" Text="Search Company" />
+                </td>
+                <td class="auto-style26">
+                    <asp:Label ID="Label22" runat="server" Text="Password"></asp:Label>
+                </td>
+                <td class="auto-style24">
+                    <asp:TextBox ID="TextBox4" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                </td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <asp:Label ID="Label14" runat="server" Text="Enter Username &amp; Password"></asp:Label>
+                <td colspan="2" class="cent">
+                    <asp:Label ID="Label39" runat="server" Text="Enter Username &amp; Password" ForeColor="Red"></asp:Label>
+
+
                 </td>
-                <td class="auto-style12">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style23">&nbsp;</td>
+                <td class="auto-style24">
+                    <asp:RadioButton ID="RadioButton2" runat="server" Text="Search Students" />
+                </td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style24">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style10">&nbsp;</td>
-                <td class="auto-style11">
+                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style20">
                     <asp:Label ID="Label15" runat="server" Text="New Student?"></asp:Label>
                 </td>
-                <td class="auto-style12">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style23">&nbsp;</td>
+                <td class="auto-style24">&nbsp;</td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style24">
+                    <asp:Label ID="Label23" runat="server" Text="New Company?"></asp:Label>
+                </td>
             </tr>
             <tr>
-                <td class="auto-style10">&nbsp;</td>
-                <td class="auto-style11">
+                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style20">
                     <asp:Label ID="Label16" runat="server" Text="Forgot Password?"></asp:Label>
                 </td>
-                <td class="auto-style12">&nbsp;</td>
-                <td class="auto-style13">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style22">&nbsp;</td>
+                <td class="auto-style23">&nbsp;</td>
+                <td class="auto-style24" style="text-align: center;">
+                    <asp:Button ID="Button2" runat="server" Text="Search" />
+                </td>
+                <td class="auto-style26">&nbsp;</td>
+                <td class="auto-style24">
+                    <asp:Label ID="Label24" runat="server" Text="Forgot Password?"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        <table class="auto-style2">
+            <tr>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
+                <td class="auto-style32">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Label ID="Label25" runat="server" Text="Find Job by Category"></asp:Label>
+                </td>
+                <td class="auto-style31" rowspan="9" style="text-align:center;">
+                    <img alt="" class="auto-style30" src="fonts\pexels-edmond-dantès-4344860.jpg" /></td>
+                <td class="auto-style32">
+                    <asp:Label ID="Label26" runat="server" Text="Latest 5 companies"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style32">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Label ID="Label27" runat="server" Text="Computer"></asp:Label>
+                </td>
+                <td class="auto-style32">
+                    <asp:Label ID="Label34" runat="server" Text="L&amp;T Construction "></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Label ID="Label28" runat="server" Text="IT"></asp:Label>
+                </td>
+                <td class="auto-style32">
+                    <asp:Label ID="Label35" runat="server" Text="Wipro Technologies"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Label ID="Label29" runat="server" Text="Mechanical"></asp:Label>
+                </td>
+                <td class="auto-style32">
+                    <asp:Label ID="Label36" runat="server" Text="Infosys"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Label ID="Label30" runat="server" Text="ECE"></asp:Label>
+                </td>
+                <td class="auto-style32">
+                    <asp:Label ID="Label37" runat="server" Text="Amazon"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Label ID="Label31" runat="server" Text="Auto"></asp:Label>
+                </td>
+                <td class="auto-style32">
+                    <asp:Label ID="Label38" runat="server" Text="Google"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Label ID="Label32" runat="server" Text="Civil"></asp:Label>
+                </td>
+                <td class="auto-style32">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Label ID="Label33" runat="server" Text="Electrical"></asp:Label>
+                </td>
+                <td class="auto-style32">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
+                <td class="auto-style32">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style27">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
+                <td class="auto-style32">&nbsp;</td>
             </tr>
         </table>
     </form>
