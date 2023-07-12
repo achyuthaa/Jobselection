@@ -58,7 +58,7 @@ namespace Jobselection
                 string connection = "Data Source=DESKTOP-L0EEEQT; Initial catalog=JobSelection; Integrated Security=true;";
                 con = new SqlConnection(connection);
                 con.Open();
-                cmd = new SqlCommand("select UserName,Password from StudentLogin", con);
+                cmd = new SqlCommand("select UserName,Password,Name from StudentLogin", con);
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
@@ -66,6 +66,8 @@ namespace Jobselection
                     {
                         Response.Write("Login Successfull");
                         i = 1;
+                        Session["Name"] = rdr.GetString(2);
+                        Response.Redirect("StudentLoggedIn.aspx");
                         break;
                     }
                 }

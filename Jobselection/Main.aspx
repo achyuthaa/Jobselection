@@ -9,12 +9,17 @@
         .cent{
             text-align:center;
         }
+        .whole{
+            /*background-color:aliceblue;*/
+            margin-left:auto;
+            margin-right:auto;
+        }
         .auto-style1 {
             width: 100%;
             height: auto;
             display: flex;
             justify-content: center;
-            background-color:aquamarine;
+            background-color:lightpink;
             border-radius: 5px;
         }
         .row-label {
@@ -22,10 +27,17 @@
             font-size: 4vh;/* Responsive font size based on viewport width */
             height: 50px;
             align-items: center;
+            color:crimson;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            display:flex;
+            justify-content: center;
+           
+            
             
         }
         .auto-style2 {
             width: 100%;
+            table-layout: fixed;
            
         }
         .auto-style3 {
@@ -40,17 +52,21 @@
             display:block;
             padding: 4px;
             margin: 0px;
-            background-color:aquamarine;
+            background-color:lightpink;
             font-size: 3vw;
             font-size: 3vh;
             align-items:center;
             justify-content:center;
             text-align:center;
             border-radius: 5px;
+            color:darkslategrey;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration:none;
         }
         .container{
             margin-left:auto;
             margin-right:auto;
+            
         }
         .auto-style8 {
             width: 393px;
@@ -90,13 +106,19 @@
         .auto-style31 {
             width: 747px;
         }
-        .auto-style32 {
+        .auto-style32 a{
             width: 374px;
+            text-decoration:none;
+        }
+        .row-label3{
+            color:darkslategrey;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server" style="margin: 0; padding: 0;">
+        <div class="whole">
         <div class="container">
         <div class="auto-style1">
             <asp:Label ID="Label1" runat="server" CssClass="row-label" Text="Online Campus Selection System" Font-Bold="True"></asp:Label>
@@ -140,69 +162,69 @@
         <table class="auto-style2">
             <tr>
                 <td class="auto-style19">
-                    <asp:Label ID="Label12" runat="server" Text="UserName"></asp:Label>
+                    <asp:Label ID="Label12" CssClass="row-label3" runat="server" Text="UserName"></asp:Label>
                 </td>
                 <td class="auto-style20">
-                    <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1"  runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style21">
-                    <asp:Label ID="Label17" runat="server" Text="Category      :"></asp:Label>
+                    <asp:Label ID="Label17" CssClass="row-label3" runat="server" Text="Category      :"></asp:Label>
                 </td>
                 <td class="auto-style22">
                     <asp:ListBox ID="ListBox1" runat="server" Height="33px" Width="117px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged"></asp:ListBox>
                 </td>
                 <td class="auto-style23">
-                    <asp:Label ID="Label19" runat="server" Text="Skill"></asp:Label>
+                    <asp:Label ID="Label19" CssClass="row-label3" runat="server" Text="Skill"></asp:Label>
                 </td>
                 <td class="auto-style24">
                     <asp:ListBox ID="ListBox3" runat="server" Height="33px" Width="117px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged"></asp:ListBox>
                 </td>
                 <td colspan="2" class="cent">
-                    <asp:Label ID="Label20" runat="server" Text="Recruiter Login Area"></asp:Label>
+                    <asp:Label ID="Label20" CssClass="row-label3" runat="server" Text="Recruiter Login Area"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19">
-                    <asp:Label ID="Label13" runat="server" Text="Password"></asp:Label>
+                    <asp:Label ID="Label13" CssClass="row-label3" runat="server" Text="Password"></asp:Label>
                 </td>
                 <td class="auto-style20">
-                    <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2"  runat="server" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style21">
-                    <asp:Label ID="Label18" runat="server" Text="Qualification :"></asp:Label>
+                    <asp:Label ID="Label18" CssClass="row-label3" runat="server" Text="Qualification :"></asp:Label>
                 </td>
                 <td class="auto-style22">
-                    <asp:ListBox ID="ListBox2" runat="server" Height="33px" Width="117px"></asp:ListBox>
+                    <asp:ListBox ID="ListBox2"  runat="server" Height="33px" Width="117px"></asp:ListBox>
                 </td>
                 <td class="auto-style23">&nbsp;</td>
                 <td class="auto-style24">&nbsp;</td>
                 <td class="auto-style26">
-                    <asp:Label ID="Label21" runat="server" Text="UserName"></asp:Label>
+                    <asp:Label ID="Label21" CssClass="row-label3" runat="server" Text="UserName"></asp:Label>
                 </td>
                 <td class="auto-style24">
-                    <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3"  runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" style="text-align:center;">
-                    <asp:Button ID="Button1" runat="server" Text="Login" Width="114px"  OnClick="Button1_Click"/>
+                    <asp:Button ID="Button1" CssClass="row-label3" runat="server" Text="Login" Width="114px"  OnClick="Button1_Click"/>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
                 <td class="auto-style23">&nbsp;</td>
                 <td class="auto-style24">
-                    <asp:RadioButton ID="RadioButton1" runat="server" GroupName="my" Text="Search Company" />
+                    <asp:RadioButton ID="RadioButton1" CssClass="row-label3" runat="server" GroupName="my" Text="Search Company" />
                 </td>
                 <td class="auto-style26">
-                    <asp:Label ID="Label22" runat="server" Text="Password"></asp:Label>
+                    <asp:Label ID="Label22" CssClass="row-label3" runat="server" Text="Password"></asp:Label>
                 </td>
                 <td class="auto-style24">
-                    <asp:TextBox ID="TextBox4" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4"  runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" class="cent">
-                    <asp:Label ID="Label39" runat="server" Text="Enter Username &amp; Password" ForeColor="Red"></asp:Label>
+                    <asp:Label ID="Label39" CssClass="row-label3" runat="server" Text="Enter Username &amp; Password" ForeColor="Red"></asp:Label>
 
 
                 </td>
@@ -210,15 +232,15 @@
                 <td class="auto-style22">&nbsp;</td>
                 <td class="auto-style23">&nbsp;</td>
                 <td class="auto-style24">
-                    <asp:RadioButton ID="RadioButton2" runat="server" GroupName="my" Text="Search Students" />
+                    <asp:RadioButton ID="RadioButton2" CssClass="row-label3" runat="server" GroupName="my" Text="Search Students" />
                 </td>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style24">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style20">
-                    <asp:Label ID="Label15" runat="server" Text="New Student?"></asp:Label>
+                <td class="auto-style20"> 
+                    <asp:Label ID="Label15" CssClass="row-label3" runat="server" Text="New Student?"></asp:Label>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
@@ -226,23 +248,23 @@
                 <td class="auto-style24">&nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style24">
-                    <asp:Label ID="Label23" runat="server" Text="New Company?"></asp:Label>
+                    <asp:Label ID="Label23" CssClass="row-label3" runat="server" Text="New Company?"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style20">
-                    <asp:Label ID="Label16" runat="server" Text="Forgot Password?"></asp:Label>
+                    <asp:Label ID="Label16" CssClass="row-label3" runat="server" Text="Forgot Password?"></asp:Label>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
                 <td class="auto-style23">&nbsp;</td>
                 <td class="auto-style24" style="text-align: center;">
-                    <asp:Button ID="Button2" runat="server" Text="Search" />
+                    <asp:Button ID="Button2" CssClass="row-label3" runat="server" Text="Search" />
                 </td>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style24">
-                    <asp:Label ID="Label24" runat="server" Text="Forgot Password?"></asp:Label>
+                    <asp:Label ID="Label24" CssClass="row-label3" runat="server" Text="Forgot Password?"></asp:Label>
                 </td>
             </tr>
         </table>
@@ -271,7 +293,9 @@
                     <asp:Label ID="Label27"  CssClass="row-label2" runat="server" Text="Computer"></asp:Label>
                 </td>
                 <td class="auto-style32">
+                    <a href="https://www.larsentoubro.com/">
                     <asp:Label ID="Label34"  CssClass="row-label2" runat="server" Text="L&amp;T Construction "></asp:Label>
+                        </a>
                 </td>
             </tr>
             <tr>
@@ -279,7 +303,9 @@
                     <asp:Label ID="Label28"  CssClass="row-label2" runat="server" Text="IT"></asp:Label>
                 </td>
                 <td class="auto-style32">
+                    <a href="https://www.wipro.com/">
                     <asp:Label ID="Label35"  CssClass="row-label2" runat="server" Text="Wipro Technologies"></asp:Label>
+                        </a>
                 </td>
             </tr>
             <tr>
@@ -287,7 +313,9 @@
                     <asp:Label ID="Label29"  CssClass="row-label2" runat="server" Text="Mechanical"></asp:Label>
                 </td>
                 <td class="auto-style32">
+                    <a href="https://www.infosys.com/">
                     <asp:Label ID="Label36"  CssClass="row-label2" runat="server" Text="Infosys"></asp:Label>
+                        </a>
                 </td>
             </tr>
             <tr>
@@ -295,7 +323,9 @@
                     <asp:Label ID="Label30"  CssClass="row-label2" runat="server" Text="ECE"></asp:Label>
                 </td>
                 <td class="auto-style32">
+                    <a href="https://www.amazon.jobs/en/job_categories/operations-it-support-engineering">
                     <asp:Label ID="Label37"  CssClass="row-label2" runat="server" Text="Amazon"></asp:Label>
+                        </a>
                 </td>
             </tr>
             <tr>
@@ -303,7 +333,9 @@
                     <asp:Label ID="Label31"  CssClass="row-label2" runat="server" Text="Auto"></asp:Label>
                 </td>
                 <td class="auto-style32">
+                    <a href="https://about.google/">
                     <asp:Label ID="Label38"  CssClass="row-label2" runat="server" Text="Google"></asp:Label>
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -329,6 +361,7 @@
                 <td class="auto-style32">&nbsp;</td>
             </tr>
         </table>
+            </div>
     </form>
 </body>
 </html>
