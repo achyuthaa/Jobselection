@@ -84,7 +84,7 @@
             width: 12%;
         }
         .auto-style22 {
-            width: 9%;
+            width: 10%;
         }
         .auto-style23 {
             width: 7%;
@@ -113,6 +113,29 @@
         .row-label3{
             color:darkslategrey;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .auto-style32 {
+            height: 43px;
+        }
+        .auto-style33 {
+            width: 12%;
+            height: 43px;
+        }
+        .auto-style34 {
+            width: 10%;
+            height: 43px;
+        }
+        .auto-style35 {
+            width: 7%;
+            height: 43px;
+        }
+        .auto-style36 {
+            width: 15%;
+            height: 43px;
+        }
+        .auto-style37 {
+            width: 101px;
+            height: 43px;
         }
     </style>
 </head>
@@ -152,7 +175,7 @@
                     <asp:Label ID="Label9" CssClass="row-label2" runat="server" Text="Job Seeker Login Area" Width="344px" style="height: 56px"></asp:Label>
                 </td>
                 <td class="auto-style8">
-                    <asp:Label ID="Label10" CssClass="row-label2" runat="server" Text="ADVANCE SEARCH ZONE" Height="56px" Width="484px"></asp:Label>
+                    <asp:Label ID="Label10" CssClass="row-label2" runat="server" Text="ADVANCE SEARCH ZONE" Height="56px" Width="388px"></asp:Label>
                 </td>
                 <td>
                     <asp:Label ID="Label11" CssClass="row-label2" runat="server" Text="Recruiter Login Area" style="height: 56px"></asp:Label>
@@ -206,19 +229,19 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:center;">
+                <td colspan="2" style="text-align:center;" class="auto-style32">
                     <asp:Button ID="Button1" CssClass="row-label3" runat="server" Text="Login" Width="114px"  OnClick="Button1_Click"/>
                 </td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style22">&nbsp;</td>
-                <td class="auto-style23">&nbsp;</td>
-                <td class="auto-style24">
+                <td class="auto-style33"></td>
+                <td class="auto-style34"></td>
+                <td class="auto-style35"></td>
+                <td class="auto-style36">
                     <asp:RadioButton ID="RadioButton1" CssClass="row-label3" runat="server" GroupName="my" Text="Search Company" />
                 </td>
-                <td class="auto-style26">
+                <td class="auto-style37">
                     <asp:Label ID="Label22" CssClass="row-label3" runat="server" Text="Password"></asp:Label>
                 </td>
-                <td class="auto-style24">
+                <td class="auto-style36">
                     <asp:TextBox ID="TextBox4"  runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </td>
             </tr>
@@ -234,8 +257,14 @@
                 <td class="auto-style24">
                     <asp:RadioButton ID="RadioButton2" CssClass="row-label3" runat="server" GroupName="my" Text="Search Students" />
                 </td>
-                <td class="auto-style26">&nbsp;</td>
-                <td class="auto-style24">&nbsp;</td>
+                <td class="auto-style26">
+                    <asp:Label ID="Label40" CssClass="row-label3" runat="server" Text="Enter Username &amp; Password" ForeColor="Red"></asp:Label>
+
+
+                </td>
+                <td class="auto-style24" style="text-align: center";>
+                    <asp:Button ID="Button2" CssClass="row-label3" runat="server" Text="Login" OnClick="Button2_Click" Width="111px" />
+                </td>
             </tr>
             <tr>
                 <td class="auto-style19">&nbsp;</td>
@@ -260,7 +289,7 @@
                 <td class="auto-style22">&nbsp;</td>
                 <td class="auto-style23">&nbsp;</td>
                 <td class="auto-style24" style="text-align: center;">
-                    <asp:Button ID="Button2" CssClass="row-label3" runat="server" Text="Search" />
+                    <asp:Button ID="Button3" CssClass="row-label3" runat="server" Text="Search" Width="114px"  OnClick="Button1_Click"/>
                 </td>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style24">

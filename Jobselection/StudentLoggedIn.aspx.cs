@@ -34,7 +34,7 @@ namespace Jobselection
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button2_Click(object sender, EventArgs e)
         {
             
             string connection = "Data Source=DESKTOP-L0EEEQT; initial catalog=JobSelection; Integrated security=true;";
@@ -50,6 +50,21 @@ namespace Jobselection
             }
             conn.Close();
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            string connection = "Data Source=DESKTOP-L0EEEQT; initial catalog=JobSelection; Integrated security=true;";
+            conn = new SqlConnection(connection);
+            conn.Open();
+            cmd = new SqlCommand("Insert into StudentSubmissiontable values(@value1,@value2,@value3,@value4)", conn);
+            cmd.Parameters.AddWithValue("@value1", TextBox1.Text);
+            cmd.Parameters.AddWithValue("@value2", TextBox2.Text);
+            cmd.Parameters.AddWithValue("@value3", DropDownList1.SelectedItem.Text);
+            cmd.Parameters.AddWithValue("@value4", TextBox3.Text);
+            cmd.ExecuteNonQuery();
+            conn.Close();
         }
     }
 }

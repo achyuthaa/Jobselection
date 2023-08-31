@@ -285,6 +285,24 @@ namespace Jobselection
         protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
 
         /// <summary>
+        /// Label40 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label40;
+
+        /// <summary>
+        /// Button2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2;
+
+        /// <summary>
         /// Label15 control.
         /// </summary>
         /// <remarks>
@@ -312,13 +330,13 @@ namespace Jobselection
         protected global::System.Web.UI.WebControls.Label Label16;
 
         /// <summary>
-        /// Button2 control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button Button3;
 
         /// <summary>
         /// Label24 control.

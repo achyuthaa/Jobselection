@@ -162,7 +162,7 @@
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobSelectionConnectionString %>" SelectCommand="SELECT [CompanyName] FROM [RecruiterLogin]"></asp:SqlDataSource>
                 </td>
                 <td class="auto-style15">
-                    <asp:Button ID="Button2" runat="server" Text="Go" Width="114px"  OnClick="Button1_Click"/>
+                    <asp:Button ID="Button2" runat="server" Text="Go" Width="114px"  OnClick="Button2_Click"/>
                 </td>
             </tr>
         </table>
