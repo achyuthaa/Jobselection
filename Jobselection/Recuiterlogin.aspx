@@ -6,9 +6,6 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
         .Labell1{
              display:block;
             padding: 4px;
@@ -24,35 +21,44 @@
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-decoration:none;
         }
-        
+        .test1{
+            width: 855px;
+        }
+        .test2{
+            width: 801px;
+        }
+        .auto-style2 {
+            margin-top: 0px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1">
-                <tr>
-                    <td>
-                        <div class="auto-style2">
-                        <asp:Label ID="Label1" runat="server" CssClass="Labell1" Text="StudentName"></asp:Label>
-                            </div>
-                    </td>
-                    <td>
-                        <div class="auto-style3">
-                        <asp:Label ID="Label2" runat="server" CssClass="Labell1" Text="ResumeLink"></asp:Label>
-                         </div>
-                    </td>
-                </tr>
-            </table>
 
         </div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="1247px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" CssClass="auto-style2">
             <Columns>
-                <asp:BoundField DataField="StudentName" HeaderText="StudentName" SortExpression="StudentName" />
-                <asp:BoundField DataField="ResumeLink" HeaderText="ResumeLink" SortExpression="ResumeLink" />
+                <asp:BoundField DataField="StudentName" ControlStyle-CssClass="test1" HeaderText="StudentName" SortExpression="StudentName" />
+                <asp:BoundField DataField="ResumeLink" ControlStyle-CssClass="test2" HeaderText="ResumeLink" SortExpression="ResumeLink" />
+                <asp:BoundField DataField="RecruiterName" HeaderText="RecruiterName" SortExpression="RecruiterName" />
+                <asp:BoundField DataField="CompanyName" HeaderText="CompanyName" SortExpression="CompanyName" />
             </Columns>
+            <FooterStyle BackColor="White" ForeColor="#000066" />
+            <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+            <RowStyle ForeColor="#000066" />
+            <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+            <SortedAscendingCellStyle BackColor="#F1F1F1" />
+            <SortedAscendingHeaderStyle BackColor="#007DBB" />
+            <SortedDescendingCellStyle BackColor="#CAC9C9" />
+            <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobSelectionConnectionString2 %>" SelectCommand="SELECT [StudentName], [ResumeLink] FROM [StudentSubmissionTable]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobSelectionConnectionString3 %>" SelectCommand="SELECT [StudentName], [ResumeLink], [RecruiterName], [CompanyName] FROM [StudentSubmissionTable] WHERE ([RecruiterName] = @RecruiterName)">
+            <SelectParameters>
+                <asp:SessionParameter Name="RecruiterName" SessionField="RecruiterName" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
     </form>
 </body>
 </html>

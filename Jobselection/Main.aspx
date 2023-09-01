@@ -22,6 +22,16 @@
             background-color:lightpink;
             border-radius: 5px;
         }
+        .auto-style11 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            background-color:aliceblue;
+            border-radius: 5px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:crimson;
+        }
         .row-label {
             font-size: 4vw;
             font-size: 4vh;/* Responsive font size based on viewport width */
@@ -211,7 +221,7 @@
                     <asp:Label ID="Label13" CssClass="row-label3" runat="server" Text="Password"></asp:Label>
                 </td>
                 <td class="auto-style20">
-                    <asp:TextBox ID="TextBox2"  runat="server" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" TextMode="Password" runat="server" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style21">
                     <asp:Label ID="Label18" CssClass="row-label3" runat="server" Text="Qualification :"></asp:Label>
@@ -225,7 +235,7 @@
                     <asp:Label ID="Label21" CssClass="row-label3" runat="server" Text="UserName"></asp:Label>
                 </td>
                 <td class="auto-style24">
-                    <asp:TextBox ID="TextBox3"  runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" TextMode="Password" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -242,7 +252,7 @@
                     <asp:Label ID="Label22" CssClass="row-label3" runat="server" Text="Password"></asp:Label>
                 </td>
                 <td class="auto-style36">
-                    <asp:TextBox ID="TextBox4"  runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" TextMode="Password" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -385,13 +395,13 @@
                 <td class="auto-style32">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style31">&nbsp;</td>
-                <td class="auto-style32">&nbsp;</td>
+                <td colspan="3">
+                    <asp:Label ID="Label41" CssClass="auto-style11" runat="server" Text="Designed and Developed by Achyuthanwesh Vanga(α)" ></asp:Label>
+                </td>
             </tr>
         </table>
             </div>
     </form>
 </body>
 </html>
-
+ 

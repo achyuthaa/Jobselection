@@ -11,7 +11,23 @@ namespace Jobselection
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //string RecruiterName = Session["RecruiterName"].ToString();
+            try
+            {
+                
+                if (Session["RecruiterName"] != null)
+                {
+                    string RecruiterName = Session["RecruiterName"].ToString();
+                }
+                else
+                {
+                    Response.Redirect("Main.aspx");
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)

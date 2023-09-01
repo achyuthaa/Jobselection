@@ -16,9 +16,26 @@ namespace Jobselection
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string stdname = Session["name"].ToString();
-            TextBox1.Text = stdname;
-            TextBox1.Enabled = false;
+            
+            try
+            {
+                
+                if (Session["Name"] != null)
+                {
+                    string stdname = Session["Name"].ToString();
+                    TextBox1.Text = stdname;
+                    TextBox1.Enabled = false;
+                }
+                else
+                {
+                    Response.Redirect("Main.aspx");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            
 
         }
 
