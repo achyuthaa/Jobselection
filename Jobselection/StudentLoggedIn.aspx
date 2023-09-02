@@ -43,6 +43,8 @@
             border-radius: 5px;
             color:darkslategrey;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            
         }
         .row-label3{
             color:darkslategrey;
@@ -54,6 +56,7 @@
         }
         .auto-style3 {
             width: 189px;
+            text-decoration:none;
            
         }
         .auto-style4 {
@@ -106,7 +109,7 @@
         <table class="auto-style2">
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="Label2" CssClass="row-label2" runat="server" Text="Home"></asp:Label>
+                    <asp:LinkButton ID="Label2" CssClass="row-label2" runat="server" OnClick="Redirect_Click" Text="Home"/>
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="Label3" CssClass="row-label2" runat="server" Text="New Company"></asp:Label>

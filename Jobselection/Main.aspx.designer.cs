@@ -39,7 +39,7 @@ namespace Jobselection
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.LinkButton Label2;
 
         /// <summary>
         /// Label3 control.
@@ -309,7 +309,7 @@ namespace Jobselection
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label15;
+        protected global::System.Web.UI.WebControls.LinkButton Label15;
 
         /// <summary>
         /// Label23 control.
@@ -318,7 +318,7 @@ namespace Jobselection
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label23;
+        protected global::System.Web.UI.WebControls.LinkButton Label23;
 
         /// <summary>
         /// Label16 control.
@@ -327,7 +327,7 @@ namespace Jobselection
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label16;
+        protected global::System.Web.UI.WebControls.LinkButton Label16;
 
         /// <summary>
         /// Button3 control.
@@ -345,7 +345,7 @@ namespace Jobselection
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label24;
+        protected global::System.Web.UI.WebControls.LinkButton Label24;
 
         /// <summary>
         /// Label25 control.

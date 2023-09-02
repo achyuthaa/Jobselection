@@ -159,7 +159,7 @@
         <table class="auto-style2">
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="Label2" CssClass="row-label2" runat="server" Text="Home"></asp:Label>
+                    <asp:LinkButton ID="Label2" CssClass="row-label2" runat="server" OnClick="Redirect_Click" Text="Home" />
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="Label3" CssClass="row-label2" runat="server" Text="New Company"></asp:Label>
@@ -279,7 +279,7 @@
             <tr>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style20"> 
-                    <asp:Label ID="Label15" CssClass="row-label3" runat="server" Text="New Student?"></asp:Label>
+                    <asp:LinkButton ID="Label15" CssClass="row-label3" runat="server" Text="New Student?" OnClick="Label15_Click"/>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
@@ -287,13 +287,13 @@
                 <td class="auto-style24">&nbsp;</td>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style24">
-                    <asp:Label ID="Label23" CssClass="row-label3" runat="server" Text="New Company?"></asp:Label>
+                    <asp:LinkButton ID="Label23" CssClass="row-label3" runat="server" Text="New Company?" OnClick="Label23_Click"/>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style20">
-                    <asp:Label ID="Label16" CssClass="row-label3" runat="server" Text="Forgot Password?"></asp:Label>
+                    <asp:LinkButton ID="Label16" CssClass="row-label3" runat="server" Text="Forgot Password?"></asp:LinkButton>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
@@ -303,7 +303,7 @@
                 </td>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style24">
-                    <asp:Label ID="Label24" CssClass="row-label3" runat="server" Text="Forgot Password?"></asp:Label>
+                    <asp:LinkButton ID="Label24" CssClass="row-label3" runat="server" Text="Forgot Password?"></asp:LinkButton>
                 </td>
             </tr>
         </table>

@@ -117,7 +117,7 @@ namespace Jobselection
                         break;
                     }
                 }
-                Label39.Visible = true;
+                Label40.Visible = true;
                 if (i == 0)
                 {
                     Label40.Text = "Recruiter not found";
@@ -134,6 +134,23 @@ namespace Jobselection
 
             
 
+        }
+       
+
+        protected void Redirect_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Main.aspx");
+
+        }
+
+        protected void Label15_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CreateStudent.aspx");
+        }
+
+        protected void Label23_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CreateRecruiter.aspx");
         }
     }
 }
