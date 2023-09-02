@@ -69,6 +69,11 @@ namespace Jobselection
 
         }
 
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("Main.aspx");
+        }
         protected void Button1_Click(object sender, EventArgs e)
         {
 
@@ -82,9 +87,16 @@ namespace Jobselection
             cmd.Parameters.AddWithValue("@value4", TextBox3.Text);
             cmd.ExecuteNonQuery();
             conn.Close();
+            TextBox3.Text = "";
         }
         protected void Redirect_Click(object sender, EventArgs e)
         {
+            Response.Redirect("Main.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
             Response.Redirect("Main.aspx");
         }
     }

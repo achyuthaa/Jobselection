@@ -30,11 +30,30 @@
         .auto-style2 {
             margin-top: 0px;
         }
+        .auto-style3 {
+            width: 100%;
+        }
+        .row-label3{
+            color:darkslategrey;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .auto-style4 {
+            width: 1242px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            <table class="auto-style3">
+                <tr>
+                    <td>&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td>
+                    <asp:Button ID="Button1" CssClass="row-label3" runat="server" Text="Logout" Width="114px"  OnClick="Button1_Click"/>
+                    </td>
+                </tr>
+            </table>
 
         </div>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="1247px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" CssClass="auto-style2">

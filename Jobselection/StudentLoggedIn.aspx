@@ -98,6 +98,9 @@
         .auto-style18 {
             width: 144px;
         }
+        .auto-style19 {
+            width: 1141px;
+        }
     </style>
 </head>
 <body>
@@ -187,11 +190,15 @@
         </table>
         <table class="auto-style2">
             <tr>
+                <td class="auto-style19">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td style="text-align:center">
+                <td style="text-align:center" class="auto-style19">
                     <asp:Button ID="Button1" runat="server" Text="Apply" Width="114px"  OnClick="Button1_Click"/>
+                </td>
+                <td style="text-align:center">
+                    <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" style="width: 90px" Text="Logout" />
                 </td>
             </tr>
         </table>
