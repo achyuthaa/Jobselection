@@ -109,8 +109,8 @@
             width: 277px;
         }
         .auto-style30 {
-            width: 509px;
-            height: 327px;
+            width: 709px;
+            height: 527px;
             margin-left: 19px;
         }
         .auto-style31 {

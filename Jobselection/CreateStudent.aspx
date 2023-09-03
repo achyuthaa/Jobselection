@@ -76,6 +76,13 @@
                 </td>
             </tr>
         </table>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <asp:Label ID="Label7" CssClass="row-label2" runat="server" Text="Student Exists"></asp:Label>
+                    </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>

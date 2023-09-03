@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace Jobselection
 {
@@ -16,6 +17,7 @@ namespace Jobselection
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Label16.Visible = false;
             
             try
             {
@@ -76,18 +78,29 @@ namespace Jobselection
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
+            String test = TextBox3.Text;
+            if (IsUrl.IssUrl(test))
+            {
 
-            string connection = "Data Source=DESKTOP-L0EEEQT; initial catalog=JobSelection; Integrated security=true;";
-            conn = new SqlConnection(connection);
-            conn.Open();
-            cmd = new SqlCommand("Insert into StudentSubmissiontable values(@value1,@value2,@value3,@value4)", conn);
-            cmd.Parameters.AddWithValue("@value1", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@value2", TextBox2.Text);
-            cmd.Parameters.AddWithValue("@value3", DropDownList1.SelectedItem.Text);
-            cmd.Parameters.AddWithValue("@value4", TextBox3.Text);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            TextBox3.Text = "";
+                string connection = "Data Source=DESKTOP-L0EEEQT; initial catalog=JobSelection; Integrated security=true;";
+                conn = new SqlConnection(connection);
+                conn.Open();
+                cmd = new SqlCommand("Insert into StudentSubmissiontable values(@value1,@value2,@value3,@value4)", conn);
+                cmd.Parameters.AddWithValue("@value1", TextBox1.Text);
+                cmd.Parameters.AddWithValue("@value2", TextBox2.Text);
+                cmd.Parameters.AddWithValue("@value3", DropDownList1.SelectedItem.Text);
+                cmd.Parameters.AddWithValue("@value4", TextBox3.Text);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                TextBox3.Text = "";
+                Label16.Visible = true;
+                Label16.Text = "Successfully Applied";
+            }
+            else
+            {
+                Label16.Visible = true;
+                
+            }
         }
         protected void Redirect_Click(object sender, EventArgs e)
         {
@@ -98,6 +111,19 @@ namespace Jobselection
         {
             Session.Clear();
             Response.Redirect("Main.aspx");
+        }
+        public class IsUrl
+        {
+            public static bool IssUrl(string text)
+            {
+                string pattern = @"^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]$";
+                Regex regex = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+                return regex.IsMatch(text);
+            }
+        }
+        protected void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

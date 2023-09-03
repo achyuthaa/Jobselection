@@ -175,10 +175,10 @@
         <table class="auto-style2">
             <tr>
                 <td class="auto-style16" style="text-align:center">
-                    <asp:Label ID="Label15" CssClass="row-label2" runat="server" Text="Resume Link" Width="203px"></asp:Label>
+                    <asp:Label ID="Label15" CssClass="row-label2" runat="server" Text="Portfolio Link" Width="203px"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Width="366px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Width="366px" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
                 </td>
             </tr>
         </table>
@@ -190,7 +190,9 @@
         </table>
         <table class="auto-style2">
             <tr>
-                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style19">
+                    <asp:Label ID="Label16" runat="server" Text="Enter Correct Portfolio Link"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>

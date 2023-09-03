@@ -18,6 +18,7 @@ namespace Jobselection
         {
             //Label1.Text = "Achyuth";
             Label39.Visible = false;
+         
             
         }
 
