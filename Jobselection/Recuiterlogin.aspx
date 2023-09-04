@@ -73,7 +73,7 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobSelectionConnectionString3 %>" SelectCommand="SELECT [StudentName], [ResumeLink], [RecruiterName], [CompanyName] FROM [StudentSubmissionTable] WHERE ([RecruiterName] = @RecruiterName)">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobSelectionConnectionStringM %>" SelectCommand="SELECT [StudentName], [ResumeLink], [RecruiterName], [CompanyName] FROM [StudentSubmissionTable] WHERE ([RecruiterName] = @RecruiterName)">
             <SelectParameters>
                 <asp:SessionParameter Name="RecruiterName" SessionField="RecruiterName" Type="String" />
             </SelectParameters>

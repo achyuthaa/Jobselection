@@ -157,14 +157,15 @@
                     <asp:Label ID="Label13" CssClass="row-label2" runat="server" Text="Recruiter Name" Width="155px"></asp:Label>
                 </td>
                 <td class="auto-style12">
-                    <asp:TextBox ID="TextBox2" runat="server" Width="116px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Width="116px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style14">
                     <asp:Label ID="Label14" CssClass="row-label2" runat="server" Text="Company Name" Width="167px"></asp:Label>
                 </td>
                 <td class="auto-style17">
-                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="CompanyName" Width="145px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="CompanyName" Width="145px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataValueField="CompanyName">
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Jobselection_dbConnectionString %>" SelectCommand="SELECT [CompanyName] FROM [RecruiterLogin]"></asp:SqlDataSource>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobSelectionConnectionString %>" SelectCommand="SELECT [CompanyName] FROM [RecruiterLogin]"></asp:SqlDataSource>
                 </td>
                 <td class="auto-style15">
