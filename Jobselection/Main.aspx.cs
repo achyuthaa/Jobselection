@@ -105,7 +105,7 @@ namespace Jobselection
                 string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
                 con = new SqlConnection(connection);
                 con.Open();
-                cmd = new SqlCommand("select RecruiterUserName,Password,RecruiterName from RecruiterLogin", con);
+                cmd = new SqlCommand("select RecruiterUsername,password,RecruiterName from RecruiterLogin", con);
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
