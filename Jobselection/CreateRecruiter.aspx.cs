@@ -51,7 +51,7 @@ namespace Jobselection
                 cmd.Parameters.AddWithValue("@value2", TextBox2.Text);
                 cmd.Parameters.AddWithValue("@value3", TextBox3.Text);
                 cmd.Parameters.AddWithValue("@value4", TextBox4.Text);
-                cmd.Parameters.AddWithValue("@value5", TextBox1.Text);
+                cmd.Parameters.AddWithValue("@value5", TextBox5.Text);
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 Response.Redirect("Main.aspx");
