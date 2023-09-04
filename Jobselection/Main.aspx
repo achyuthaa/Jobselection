@@ -318,7 +318,7 @@
                     <asp:Label ID="Label25"  CssClass="row-label2" runat="server" Text="Find Job by Category"></asp:Label>
                 </td>
                 <td class="auto-style31" rowspan="9" style="text-align:center;">
-                    <img alt="" class="auto-style30" src="fonts/pexels-edmond-dantes-4344860.jpg" /></td>
+                    <img alt="" class="auto-style30" src="fonts/p.jpg" /></td>
                 <td class="auto-style32">
                     <asp:Label ID="Label26"  CssClass="row-label2" runat="server" Text="Latest 5 companies"></asp:Label>
                 </td>
