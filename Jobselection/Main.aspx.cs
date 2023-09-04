@@ -40,65 +40,49 @@ namespace Jobselection
      
 
         protected void Button1_Click(object sender, EventArgs e)
-        {
+        { 
             bool work = false;
             int i = 0;
-
-            if (string.IsNullOrEmpty(TextBox1.Text) || string.IsNullOrEmpty(TextBox2.Text))
+            if(string.IsNullOrEmpty(TextBox1.Text) || string.IsNullOrEmpty(TextBox2.Text))
             {
                 Label39.Visible = true;
+                
             }
             else
             {
                 Label39.Visible = false;
                 work = true;
+                
             }
-
-            if (work)
+            if (work == true)
             {
-                try
+                string connection = "Data Source = tcp:jobselectiondbserver.database.windows.net,1433; Initial Catalog = Jobselection_db; User Id = achyuth@jobselectiondbserver; Password = Anwesh@123";
+                con = new SqlConnection(connection);
+                con.Open();
+                cmd = new SqlCommand("select UserName,Password,Name from StudentLogin", con);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
                 {
-                    string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
-                    using (SqlConnection con = new SqlConnection(connection))
+                    if (rdr.GetString(0) == TextBox1.Text && rdr.GetString(1) == TextBox2.Text)
                     {
-                        con.Open();
-                        using (SqlCommand cmd = new SqlCommand("SELECT UserName, Password, Name FROM StudentLogin", con))
-                        using (SqlDataReader rdr = cmd.ExecuteReader())
-                        {
-                            while (rdr.Read())
-                            {
-                                if (rdr.GetString(0) == TextBox1.Text && rdr.GetString(1) == TextBox2.Text)
-                                {
-                                    Response.Write("Login Successful");
-                                    i = 1;
-                                    Session["Name"] = rdr.GetString(2);
-                                    Response.Redirect("StudentLoggedIn.aspx");
-                                    break;
-                                }
-                            }
-                        }
+                        Response.Write("Login Successfull");
+                        i = 1;
+                        Session["Name"] = rdr.GetString(2);
+                        Response.Redirect("StudentLoggedIn.aspx");
+                        break;
                     }
+                }
+                Label39.Visible = true;
+                if(i == 0)
+                {
+                    Label39.Text = "Student not found";
+                }
+                else
+                {
+                    Label39.Text = "Student Found";
+                }
 
-                    // Check if no matching student was found
-                    if (i == 0)
-                    {
-                        Label39.Visible = true;
-                        Label39.Text = "Student not found";
-                    }
-                    else
-                    {
-                        Label39.Visible = true;
-                        Label39.Text = "Student Found";
-                    }
-                }
-                catch (Exception ex)
-                {
-                    // Handle the exception (e.g., log it or display an error message)
-                    Label39.Visible = true;
-                    Label39.Text = "An error occurred: " + ex.Message;
-                }
             }
-
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -118,7 +102,7 @@ namespace Jobselection
             }
             if (work == true)
             {
-                string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
+                string connection = "Data Source = tcp:jobselectiondbserver.database.windows.net,1433; Initial Catalog = Jobselection_db; User Id = achyuth@jobselectiondbserver; Password = Anwesh@123";
                 con = new SqlConnection(connection);
                 con.Open();
                 cmd = new SqlCommand("select RecruiterUsername,password,RecruiterName from RecruiterLogin", con);
