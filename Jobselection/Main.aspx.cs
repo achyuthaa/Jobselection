@@ -56,7 +56,7 @@ namespace Jobselection
             }
             if (work == true)
             {
-                string connection = "Data Source=DESKTOP-L0EEEQT; Initial catalog=JobSelection; Integrated Security=true;";
+                string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
                 con = new SqlConnection(connection);
                 con.Open();
                 cmd = new SqlCommand("select UserName,Password,Name from StudentLogin", con);
@@ -102,7 +102,7 @@ namespace Jobselection
             }
             if (work == true)
             {
-                string connection = "Data Source=DESKTOP-L0EEEQT; Initial catalog=JobSelection; Integrated Security=true;";
+                string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
                 con = new SqlConnection(connection);
                 con.Open();
                 cmd = new SqlCommand("select RecruiterUserName,Password,RecruiterName from RecruiterLogin", con);

@@ -22,7 +22,7 @@ namespace Jobselection
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            String Connection = "Data Source=DESKTOP-L0EEEQT; Initial catalog=JobSelection; Integrated Security=true;";
+            String Connection = "Data Source = tcp:jobselectiondbserver.database.windows.net,1433; Initial Catalog = Jobselection_db; User Id = achyuth@jobselectiondbserver; Password = Anwesh@123";
             int i = 0;
             conn = new SqlConnection(Connection);
             conn.Open();

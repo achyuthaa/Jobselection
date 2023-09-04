@@ -56,7 +56,7 @@ namespace Jobselection
         protected void Button2_Click(object sender, EventArgs e)
         {
             
-            string connection = "Data Source=DESKTOP-L0EEEQT; initial catalog=JobSelection; Integrated security=true;";
+            string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
             conn = new SqlConnection(connection);
             conn.Open();
             cmd = new SqlCommand("SELECT RecruiterName FROM RecruiterLogin Where CompanyName = @value1", conn);
@@ -82,7 +82,7 @@ namespace Jobselection
             if (IsUrl.IssUrl(test))
             {
 
-                string connection = "Data Source=DESKTOP-L0EEEQT; initial catalog=JobSelection; Integrated security=true;";
+                string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
                 conn = new SqlConnection(connection);
                 conn.Open();
                 cmd = new SqlCommand("Insert into StudentSubmissiontable values(@value1,@value2,@value3,@value4)", conn);
