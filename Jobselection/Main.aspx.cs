@@ -73,6 +73,8 @@ namespace Jobselection
                         Response.Redirect("StudentLoggedIn.aspx");
                         break;
                     }
+                                        Response.Redirect("Default.aspx");
+
                 }
                 Label39.Visible = true;
                 if (i == 0)
@@ -83,6 +85,10 @@ namespace Jobselection
                 {
                     Label39.Text = "Student Found";
                 }
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
 
             }
         }
@@ -119,6 +125,8 @@ namespace Jobselection
                         Response.Redirect("Recuiterlogin.aspx");
                         break;
                     }
+                    Response.Redirect("Default.aspx");
+
                 }
                 Label40.Visible = true;
                 if (i == 0)
@@ -129,6 +137,10 @@ namespace Jobselection
                 {
                     Label40.Text = "Recruiter Found";
                 }
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
 
             }
         }
