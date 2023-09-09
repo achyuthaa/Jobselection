@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
-using System.Reflection.Emit;
 
 namespace Jobselection
 {
-
-    public partial class Main : System.Web.UI.Page
+    public partial class Mai : System.Web.UI.Page
     {
         SqlConnection con;
         SqlCommand cmd;
@@ -20,7 +18,10 @@ namespace Jobselection
             //Label1.Text = "Achyuth";
             Label39.Visible = false;
             Label40.Visible = false;
-
+            /*TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";*/
 
         }
 
@@ -29,17 +30,10 @@ namespace Jobselection
 
         }
 
-        protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         protected void TextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
-
-
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -83,8 +77,27 @@ namespace Jobselection
                 {
                     Label39.Text = "Student Found";
                 }
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
 
             }
+        }
+
+        protected void Label15_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CreateStudent.aspx");
+        }
+
+        protected void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -129,31 +142,23 @@ namespace Jobselection
                 {
                     Label40.Text = "Recruiter Found";
                 }
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
 
             }
-        }
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-
-
 
         }
 
-
-        protected void Redirect_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Default.aspx");
-
-        }
-
-        protected void Label15_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("CreateStudent.aspx");
-        }
-
-        protected void Label23_Click(object sender, EventArgs e)
+        protected void Label16_Click(object sender, EventArgs e)
         {
             Response.Redirect("CreateRecruiter.aspx");
+        }
+
+        protected void Label2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
         }
     }
 }

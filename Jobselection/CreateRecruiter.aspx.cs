@@ -54,7 +54,7 @@ namespace Jobselection
                 cmd.Parameters.AddWithValue("@value5", TextBox5.Text);
                 cmd.ExecuteNonQuery();
                 conn.Close();
-                Response.Redirect("Main.aspx");
+                Response.Redirect("Default.aspx");
             }
             else
             {

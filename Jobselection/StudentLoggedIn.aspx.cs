@@ -74,7 +74,7 @@ namespace Jobselection
         protected void Button3_Click(object sender, EventArgs e)
         {
             Session.Clear();
-            Response.Redirect("Main.aspx");
+            Response.Redirect("Default.aspx");
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -104,13 +104,13 @@ namespace Jobselection
         }
         protected void Redirect_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Main.aspx");
+            Response.Redirect("Default.aspx");
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
             Session.Clear();
-            Response.Redirect("Main.aspx");
+            Response.Redirect("Default.aspx");
         }
         public class IsUrl
         {

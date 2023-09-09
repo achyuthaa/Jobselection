@@ -1,0 +1,118 @@
+﻿.row-label2 {
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+    background-color: lightpink;
+    font-size: 2vw;
+    font-size: 2vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    color: darkslategrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+
+}
+.auto-style6 {
+    height: auto;
+    max-width: 100%;
+}
+
+.row-label {
+    font-size: 3vw;
+    font-size: 3vh; /* Responsive font size based on viewport width */
+    height: 55px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #D2386C;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.row-label-d{
+    font-size: 3vw;
+    font-size: 3vh; /* Responsive font size based on viewport width */
+    height: 55px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: crimson;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.auto-style1 {
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: lightpink;
+    border-radius: 5px;
+}
+.auto-style11 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkcyan;
+    text-align: center;
+}
+.auto-style3 {
+    width: 16.6%;
+}
+.auto-style4{
+    text-decoration: none;
+}
+.whole {
+    /*background-color:aliceblue;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.auto-style2 {
+   /*display: flex;*/
+    /*justify-content: space-around;  Adjust this as needed for spacing */
+    flex-wrap: wrap;
+    width:100%;
+}
+@media (max-width: 390px){
+    .row-label {
+        font-size: 2vw;
+        font-size: 2vh; /* Responsive font size based on viewport width */
+        height: 55px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: crimson;
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+    }
+    .row-label2 {
+        display: flex;
+        padding: 2px;
+        margin: 0px;
+        background-color: lightpink;
+        font-size: 1.5vw;
+        font-size: 1.5vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+        color: darkslategrey;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+    }
+    .auto-style6{
+        height:auto;
+        max-width: 100%;
+    }
+}

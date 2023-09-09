@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
         .cent{
             text-align:center;
@@ -150,7 +151,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server" style="margin: 0; padding: 0;">
+    <form id="form1" runat="server" style="margin: 0; padding: 0;">        
         <div class="whole">
         <div class="container">
         <div class="auto-style1">
@@ -402,6 +403,7 @@
         </table>
             </div>
     </form>
+    <script src="JavaScript.js"></script>
 </body>
 </html>
  

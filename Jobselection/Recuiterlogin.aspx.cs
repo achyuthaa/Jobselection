@@ -20,7 +20,7 @@ namespace Jobselection
                 }
                 else
                 {
-                    Response.Redirect("Main.aspx");
+                    Response.Redirect("Default.aspx");
                 }
             }
             catch(Exception ex)
@@ -38,7 +38,7 @@ namespace Jobselection
         protected void Button1_Click(object sender, EventArgs e)
         {
             Session.Clear();
-            Response.Redirect("Main.aspx");
+            Response.Redirect("Default.aspx");
         }
     }
 }
