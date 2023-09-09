@@ -47,7 +47,9 @@ namespace Jobselection
             int i = 0;
             if (string.IsNullOrEmpty(TextBox1.Text) || string.IsNullOrEmpty(TextBox2.Text))
             {
+                Response.Redirect("Default.aspx");
                 Label39.Visible = true;
+               
 
             }
             else
@@ -73,7 +75,7 @@ namespace Jobselection
                         Response.Redirect("StudentLoggedIn.aspx");
                         break;
                     }
-                                        Response.Redirect("Default.aspx");
+                                      
 
                 }
                 Label39.Visible = true;
@@ -99,6 +101,7 @@ namespace Jobselection
             int i = 0;
             if (string.IsNullOrEmpty(TextBox3.Text) || string.IsNullOrEmpty(TextBox4.Text))
             {
+                Response.Redirect("Default.aspx");
                 Label40.Visible = true;
 
             }
@@ -125,7 +128,7 @@ namespace Jobselection
                         Response.Redirect("Recuiterlogin.aspx");
                         break;
                     }
-                    Response.Redirect("Default.aspx");
+                   
 
                 }
                 Label40.Visible = true;
