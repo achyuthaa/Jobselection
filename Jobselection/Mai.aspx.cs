@@ -41,7 +41,7 @@ namespace Jobselection
             int i = 0;
             if (string.IsNullOrEmpty(TextBox1.Text) || string.IsNullOrEmpty(TextBox2.Text))
             {
-                Response.Redirect("Default.aspx");
+               // Response.Redirect("Default.aspx");
                 Label39.Visible = true;
 
             }
@@ -161,6 +161,11 @@ namespace Jobselection
         }
 
         protected void Label2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
+
+        protected void Label2_Click1(object sender, EventArgs e)
         {
             Response.Redirect("Default.aspx");
         }

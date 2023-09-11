@@ -1,5 +1,5 @@
 ﻿// your-script.js
-function loadHtmlContentBasedOnScreenWidth() {
+/*function loadHtmlContentBasedOnScreenWidth() {
     const screenWidth = window.innerWidth;
     const contentElement = document.getElementById('content');
 
@@ -23,3 +23,4 @@ function loadHtmlContentBasedOnScreenWidth() {
 // Load content when the page loads and when it's resized
 window.addEventListener('load', loadHtmlContentBasedOnScreenWidth);
 window.addEventListener('resize', loadHtmlContentBasedOnScreenWidth);
+*/

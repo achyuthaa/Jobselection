@@ -47,9 +47,10 @@ namespace Jobselection
             int i = 0;
             if (string.IsNullOrEmpty(TextBox1.Text) || string.IsNullOrEmpty(TextBox2.Text))
             {
-                Response.Redirect("Default.aspx");
+                
                 Label39.Visible = true;
-               
+               // Response.Redirect("Default.aspx");
+
 
             }
             else
@@ -101,7 +102,7 @@ namespace Jobselection
             int i = 0;
             if (string.IsNullOrEmpty(TextBox3.Text) || string.IsNullOrEmpty(TextBox4.Text))
             {
-                Response.Redirect("Default.aspx");
+                //Response.Redirect("Main.aspx");
                 Label40.Visible = true;
 
             }

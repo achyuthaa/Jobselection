@@ -5,8 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="Sty.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        .cent{
+       /* .cent{
             text-align:center;
         }
         .auto-style1 {
@@ -19,7 +20,7 @@
         }
         .row-label {
             font-size: 4vw;
-            font-size: 4vh;/* Responsive font size based on viewport width */
+            font-size: 4vh;/* Responsive font size based on viewport width 
             height: 50px;
             align-items: center;
             color:crimson;
@@ -100,51 +101,67 @@
         }
         .auto-style19 {
             width: 1141px;
+        }*/
+        .auto-style12 {
+            width: 100%;
+        }
+        @media (max-width: 470px) {
+             .row-label {
+        font-size: 1.5vw;
+        font-size: 1.5vh; /* Responsive font size based on viewport width */
+        height: 55px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: crimson;
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+    }
         }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server" style="margin: 0; padding: 0;">
+     <form id="form1" runat="server" style="margin: 0; padding: 0;">
+        <div class="whole">
         <div class="container">
         <div class="auto-style1">
             <asp:Label ID="Label1" runat="server" CssClass="row-label" Text="Online Campus Selection System" Font-Bold="True"></asp:Label>
-        </div>
+            </div>
+            <table class="auto-style12">
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+      
         <table class="auto-style2">
             <tr>
                 <td class="auto-style3">
-                    <asp:LinkButton ID="Label2" CssClass="row-label2" runat="server" OnClick="Redirect_Click" Text="Home"/>
+                    <asp:LinkButton ID="Label2" CssClass="row-label2" runat="server" Text="Home" OnClick="Label2_Click1" />
                 </td>
-                <td class="auto-style4">
+                <td class="auto-style3">
                     <asp:Label ID="Label3" CssClass="row-label2" runat="server" Text="New Company"></asp:Label>
                 </td>
-                <td>
+                <td  class="auto-style3">
                     <asp:Label ID="Label4" CssClass="row-label2" runat="server" Text="New Student"></asp:Label>
                 </td>
-                <td>
+                <td  class="auto-style3">
                     <asp:Label ID="Label5" CssClass="row-label2" runat="server" Text="College Info"></asp:Label>
                 </td>
-                <td>
+                <td  class="auto-style3">
                     <asp:Label ID="Label6" CssClass="row-label2" runat="server" Text="About Us"></asp:Label>
                 </td>
-                <td>
+                <td  class="auto-style3">
                     <asp:Label ID="Label7" CssClass="row-label2" runat="server" Text="Contact Us"></asp:Label>
                 </td>
             </tr>
         </table>
             </div>
-        <table class="auto-style2">
-            <tr>
-                <td class="auto-style9">
-                    <asp:Label ID="Label9" CssClass="row-label2" runat="server" Text="Job Seeker Login Area" Width="344px" style="height: 56px"></asp:Label>
-                </td>
-                <td class="auto-style8">
-                    <asp:Label ID="Label10" CssClass="row-label2" runat="server" Text="ADVANCE SEARCH ZONE" Height="56px" Width="484px"></asp:Label>
-                </td>
-                <td>
-                    <asp:Label ID="Label11" CssClass="row-label2" runat="server" Text="Recruiter Login Area" style="height: 56px"></asp:Label>
-                </td>
-            </tr>
-            </table>
+       
         <table class="auto-style10">
             <tr>
                 <td class="auto-style13">

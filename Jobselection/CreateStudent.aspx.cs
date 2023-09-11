@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Reflection.Emit;
+using System.Security.Principal;
 
 namespace Jobselection
 {
@@ -22,44 +23,55 @@ namespace Jobselection
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            String Connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
-            int i = 0;
-            conn = new SqlConnection(Connection);
-            conn.Open();
-            cmd = new SqlCommand("select Name from StudentLogin", conn);
-            rdr = cmd.ExecuteReader();
-            while (rdr.Read())
+            string a = TextBox1.Text;
+            string b = TextBox2.Text;
+            string c = TextBox3.Text;
+            string d = TextBox4.Text;
+            if (a == "" || b == "" || c == "" || d == "")
             {
-                if (rdr.GetString(0) != TextBox2.Text) 
-                {
-                    continue;
-                }
-                else
-                {
-                    i = 1;
-                    break;
-                }
-
-            }
-            conn.Close();
-            if (i == 0)
-            {
-                conn = new SqlConnection(Connection);
-                conn.Open();
-                cmd = new SqlCommand("Insert into StudentLogin values(@value1,@value2,@value3,@value4)", conn);
-                cmd.Parameters.AddWithValue("@value1", TextBox1.Text);
-                cmd.Parameters.AddWithValue("@value2", TextBox2.Text);
-                cmd.Parameters.AddWithValue("@value3", TextBox3.Text);
-                cmd.Parameters.AddWithValue("@value4", TextBox4.Text);
-                cmd.ExecuteNonQuery();
-                conn.Close();
-                Response.Redirect("Default.aspx");
+                Label7.Visible = true;
+                Label7.Text = "Please Enter all the columns";
             }
             else
             {
-                Label7.Visible = true;
-            }
+                String Connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
+                int i = 0;
+                conn = new SqlConnection(Connection);
+                conn.Open();
+                cmd = new SqlCommand("select Name from StudentLogin", conn);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    if (rdr.GetString(0) != TextBox2.Text)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        i = 1;
+                        break;
+                    }
 
+                }
+                conn.Close();
+                if (i == 0)
+                {
+                    conn = new SqlConnection(Connection);
+                    conn.Open();
+                    cmd = new SqlCommand("Insert into StudentLogin values(@value1,@value2,@value3,@value4)", conn);
+                    cmd.Parameters.AddWithValue("@value1", TextBox1.Text);
+                    cmd.Parameters.AddWithValue("@value2", TextBox2.Text);
+                    cmd.Parameters.AddWithValue("@value3", TextBox3.Text);
+                    cmd.Parameters.AddWithValue("@value4", TextBox4.Text);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    Response.Redirect("Default.aspx");
+                }
+                else
+                {
+                    Label7.Visible = true;
+                }
+            }
         }
     }
 }

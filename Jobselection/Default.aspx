@@ -1,23 +1,23 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <!-- Your meta tags and links to CSS files -->
+    <title>Screen Size Routing Example</title>
 </head>
 <body>
-    <header>
-        <!-- Header content here -->
-    </header>
-    <nav>
-        <!-- Navigation menu here -->
-    </nav>
-    <main>
-        <div id="content">
-            <!-- Content will be dynamically loaded here using JavaScript -->
-        </div>
-    </main>
-    <footer>
-        <!-- Footer content here -->
-    </footer>
-    <script src="JavaScript.js"></script>
+    <script>
+        // Detect screen width
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        // Define screen size thresholds
+        var smallScreenThreshold = 1200;
+       
+
+        // Redirect based on screen size
+        if (screenWidth < smallScreenThreshold) {
+            window.location.href = 'mai.aspx';
+        }  else {
+            window.location.href = 'Main.aspx';
+        }
+    </script>
 </body>
 </html>

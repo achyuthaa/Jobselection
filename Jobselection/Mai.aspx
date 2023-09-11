@@ -27,7 +27,7 @@
         <table class="auto-style2">
             <tr>
                 <td class="auto-style3">
-                    <asp:LinkButton ID="Label2" CssClass="row-label2" runat="server" Text="Home" />
+                    <asp:LinkButton ID="Label2" CssClass="row-label2" runat="server" Text="Home" OnClick="Label2_Click1" />
                 </td>
                 <td class="auto-style3">
                     <asp:Label ID="Label3" CssClass="row-label2" runat="server" Text="New Company"></asp:Label>

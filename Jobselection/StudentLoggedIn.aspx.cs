@@ -130,5 +130,11 @@ namespace Jobselection
         {
 
         }
+
+        protected void Label2_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+
+        }
     }
 }
