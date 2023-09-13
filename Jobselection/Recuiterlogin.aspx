@@ -56,7 +56,7 @@
             </table>
 
         </div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="1247px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" CssClass="auto-style2">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="100%" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" CssClass="auto-style2">
             <Columns>
                 <asp:BoundField DataField="StudentName" ControlStyle-CssClass="test1" HeaderText="StudentName" SortExpression="StudentName" />
                 <asp:BoundField DataField="ResumeLink" ControlStyle-CssClass="test2" HeaderText="ResumeLink" SortExpression="ResumeLink" />

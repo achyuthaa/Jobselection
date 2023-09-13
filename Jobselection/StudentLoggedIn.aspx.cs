@@ -81,20 +81,27 @@ namespace Jobselection
             String test = TextBox3.Text;
             if (IsUrl.IssUrl(test))
             {
-
-                string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
-                conn = new SqlConnection(connection);
-                conn.Open();
-                cmd = new SqlCommand("Insert into StudentSubmissiontable values(@value1,@value2,@value3,@value4)", conn);
-                cmd.Parameters.AddWithValue("@value1", TextBox1.Text);
-                cmd.Parameters.AddWithValue("@value2", TextBox2.Text);
-                cmd.Parameters.AddWithValue("@value3", DropDownList1.SelectedItem.Text);
-                cmd.Parameters.AddWithValue("@value4", TextBox3.Text);
-                cmd.ExecuteNonQuery();
-                conn.Close();
-                TextBox3.Text = "";
-                Label16.Visible = true;
-                Label16.Text = "Successfully Applied";
+                if (TextBox2.Text == "" || DropDownList1.Text == "")
+                {
+                    Label16.Visible = true;
+                    Label16.Text = "First select the company name and hit 'Go'";
+                }
+                else
+                {
+                    string connection = "Data Source=tcp:jobselectiondbserver.database.windows.net,1433;Initial Catalog=Jobselection_db;User Id=achyuth@jobselectiondbserver;Password=Anwesh@123";
+                    conn = new SqlConnection(connection);
+                    conn.Open();
+                    cmd = new SqlCommand("Insert into StudentSubmissiontable values(@value1,@value2,@value3,@value4)", conn);
+                    cmd.Parameters.AddWithValue("@value1", TextBox1.Text);
+                    cmd.Parameters.AddWithValue("@value2", TextBox2.Text);
+                    cmd.Parameters.AddWithValue("@value3", DropDownList1.SelectedItem.Text);
+                    cmd.Parameters.AddWithValue("@value4", TextBox3.Text);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    TextBox3.Text = "";
+                    Label16.Visible = true;
+                    Label16.Text = "Successfully Applied";
+                }
             }
             else
             {

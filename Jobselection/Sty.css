@@ -98,6 +98,14 @@
     text-decoration: none;
 }
 @media (max-width: 390px){
+    .auto-style1 {
+        width: 100%;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        background-color: lightpink;
+        border-radius: 5px;
+    }
     .row-label {
         font-size: 2vw;
         font-size: 2vh; /* Responsive font size based on viewport width */

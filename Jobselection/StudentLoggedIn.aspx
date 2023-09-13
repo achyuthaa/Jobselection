@@ -5,7 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="Sty.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
        /* .cent{
             text-align:center;
@@ -102,11 +101,73 @@
         .auto-style19 {
             width: 1141px;
         }*/
-        .auto-style12 {
-            width: 100%;
+       
+.auto-style2 {
+   /*display: flex;*/
+    /*justify-content: space-around;  Adjust this as needed for spacing */
+    flex-wrap: wrap;
+    width:100%;
+}
+.row-label2 {
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+    background-color: lightpink;
+    font-size: 1.5vw;
+    font-size: 1.5vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    color: darkslategrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+
+}
+.row-label201 {
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+    font-size: 1.5vw;
+    font-size: 1.5vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    color: darkslategrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+
+}
+.row-label{
+        font-size: 3vw;
+        font-size: 3vh; /* Responsive font size based on viewport width */
+        height: 55px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: crimson;
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+    }
+.auto-style1 {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.auto-style21 {
+            width: 16.6%;
         }
-        @media (max-width: 470px) {
-             .row-label {
+.auto-style211{
+    width:14.28%;
+}
+
+@media (max-width: 470px) {
+      .row-label {
         font-size: 1.5vw;
         font-size: 1.5vh; /* Responsive font size based on viewport width */
         height: 55px;
@@ -119,17 +180,56 @@
         display: flex;
         justify-content: center;
     }
-        }
+       .row-label2 {
+        display: flex;
+        padding: 2px;
+        margin: 0px;
+        background-color: lightpink;
+        font-size: 1vw;
+        font-size: 1vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+        color: darkslategrey;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+    }
+       .row-label201 {
+        display: flex;
+        padding: 2px;
+        margin: 0px;
+        background-color: lightpink;
+        font-size: 1vw;
+        font-size: 1vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+        color: darkslategrey;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+    }
+           
+
     </style>
 </head>
 <body>
      <form id="form1" runat="server" style="margin: 0; padding: 0;">
         <div class="whole">
         <div class="container">
-        <div class="auto-style1">
+            <div class ="ooo">
+            <table class="auto-style2">
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            </div>        
+             <div class="auto-style1">
             <asp:Label ID="Label1" runat="server" CssClass="row-label" Text="Online Campus Selection System" Font-Bold="True"></asp:Label>
-            </div>
-            <table class="auto-style12">
+             </div>
+                    
+             <table class="auto-style2">
                 <tr>
                     <td>&nbsp;</td>
                 </tr>
@@ -137,66 +237,97 @@
                     <td>&nbsp;</td>
                 </tr>
             </table>
-      
+            
         <table class="auto-style2">
             <tr>
-                <td class="auto-style3">
+                <td class="auto-style21">
                     <asp:LinkButton ID="Label2" CssClass="row-label2" runat="server" Text="Home" OnClick="Label2_Click1" />
                 </td>
-                <td class="auto-style3">
+                <td class="auto-style21">
                     <asp:Label ID="Label3" CssClass="row-label2" runat="server" Text="New Company"></asp:Label>
                 </td>
-                <td  class="auto-style3">
+                <td  class="auto-style21">
                     <asp:Label ID="Label4" CssClass="row-label2" runat="server" Text="New Student"></asp:Label>
                 </td>
-                <td  class="auto-style3">
+                <td  class="auto-style21">
                     <asp:Label ID="Label5" CssClass="row-label2" runat="server" Text="College Info"></asp:Label>
                 </td>
-                <td  class="auto-style3">
+                <td  class="auto-style21">
                     <asp:Label ID="Label6" CssClass="row-label2" runat="server" Text="About Us"></asp:Label>
                 </td>
-                <td  class="auto-style3">
+                <td  class="auto-style21">
                     <asp:Label ID="Label7" CssClass="row-label2" runat="server" Text="Contact Us"></asp:Label>
                 </td>
             </tr>
-        </table>
-            </div>
-       
-        <table class="auto-style10">
             <tr>
-                <td class="auto-style13">
-                    <asp:Label ID="Label12" CssClass="row-label2" runat="server" Text="Student Name" Width="152px"></asp:Label>
+                <td class="auto-style3">
+                    &nbsp;</td>
+                <td class="auto-style3">
+                    &nbsp;</td>
+                <td  class="auto-style3">
+                    &nbsp;</td>
+                <td  class="auto-style3">
+                    &nbsp;</td>
+                <td  class="auto-style3">
+                    &nbsp;</td>
+                <td  class="auto-style3">
+                    &nbsp;</td>
+            </tr>
+        </table>
+       
+        <table class="auto-style2">
+            <tr>
+                <td class="auto-style211">
+                    <asp:Label ID="Label12" CssClass="row-label2" runat="server" Text="Student Name" ></asp:Label>
                 </td>
-                <td class="auto-style18">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="116px"></asp:TextBox>
+                <td class="auto-style211">
+                    <asp:TextBox ID="TextBox1"  runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style12">
-                    <asp:Label ID="Label13" CssClass="row-label2" runat="server" Text="Recruiter Name" Width="155px"></asp:Label>
+                <td class="auto-style211">
+                    <asp:Label ID="Label13" CssClass="row-label2" runat="server" Text="Recruiter Name" ></asp:Label>
                 </td>
-                <td class="auto-style12">
-                    <asp:TextBox ID="TextBox2" runat="server" Width="116px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+                <td class="auto-style211">
+                    <asp:TextBox ID="TextBox2" runat="server"  OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
                 </td>
-                <td class="auto-style14">
-                    <asp:Label ID="Label14" CssClass="row-label2" runat="server" Text="Company Name" Width="167px"></asp:Label>
+                <td class="auto-style211">
+                    <asp:Label ID="Label14" CssClass="row-label2" runat="server" Text="Company Name"></asp:Label>
                 </td>
-                <td class="auto-style17">
-                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="CompanyName" Width="145px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataValueField="CompanyName">
+                <td class="auto-style211">
+                    <div class="row">
+                    <asp:DropDownList ID="DropDownList1"  runat="server" DataSourceID="SqlDataSource2" DataTextField="CompanyName" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataValueField="CompanyName">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Jobselection_dbConnectionString %>" SelectCommand="SELECT [CompanyName] FROM [RecruiterLogin]"></asp:SqlDataSource>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobSelectionConnectionString %>" SelectCommand="SELECT [CompanyName] FROM [RecruiterLogin]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1"  runat="server" ConnectionString="<%$ ConnectionStrings:JobSelectionConnectionString %>" SelectCommand="SELECT [CompanyName] FROM [RecruiterLogin]"></asp:SqlDataSource>
+                        </div>
                 </td>
-                <td class="auto-style15">
-                    <asp:Button ID="Button2" runat="server" Text="Go" Width="114px"  OnClick="Button2_Click"/>
+                <td class="auto-style211">
+                    <asp:Button ID="Button2" runat="server"  Text="Go"   OnClick="Button2_Click" Width="106px"/>
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
             </tr>
         </table>
         <table class="auto-style2">
             <tr>
-                <td class="auto-style16" style="text-align:center">
-                    <asp:Label ID="Label15" CssClass="row-label2" runat="server" Text="Portfolio Link" Width="203px"></asp:Label>
+                <td class="auto-style3" style="text-align:center">
+                    <asp:Label ID="Label15" CssClass="row-label2"  runat="server" Text="Portfolio Link"></asp:Label>
                 </td>
-                <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Width="366px" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+                <td class="auto-style3">
+                    <asp:TextBox ID="TextBox3" runat="server"  OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
                 </td>
             </tr>
         </table>
