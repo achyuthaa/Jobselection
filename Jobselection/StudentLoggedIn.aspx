@@ -140,8 +140,8 @@
 
 }
 .row-label{
-        font-size: 3vw;
-        font-size: 3vh; /* Responsive font size based on viewport width */
+        font-size: 37px;
+      /* Responsive font size based on viewport width */
         height: 55px;
         align-items: center;
         text-align: center;
@@ -314,11 +314,25 @@
                         </div>
                 </td>
                 </tr>
+            <tr>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                <td class="auto-style21">
+                    &nbsp;</td>
+                </tr>
             </table>
             <table>
                 <tr>
-                <td style="width:100%;text-align:center;">
-                    <asp:Button ID="Button2" runat="server" style="text-align:center;" Text="Go" CssClass="row-label2"  OnClick="Button2_Click" Width="106px"/>
+                <td class="auto-style1" style="width:100%;text-align:center;">
+                    <asp:Button ID="Button2" runat="server" style="text-align:center;" Text="Go" CssClass="row-label2"  OnClick="Button2_Click" Width="116px"/>
                 </td>
                     </tr>
                 </table>
