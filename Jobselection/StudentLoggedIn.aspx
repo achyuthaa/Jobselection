@@ -155,6 +155,7 @@
 .auto-style1 {
     width:100%;
     height: 100%;
+    background-color:lightpink;
     display: flex;
     justify-content: center;
     border-radius: 5px;
@@ -162,9 +163,6 @@
 .auto-style21 {
             width: 16.6%;
         }
-.auto-style211{
-    width:14.28%;
-}
 .my{
     width:90%;
     text-align:center;
@@ -178,6 +176,7 @@
                 font-size: 1.5vw;
                 font-size: 1.5vh; /* Responsive font size based on viewport width */
                 height: 55px;
+                
                 align-items: center;
                 text-align: center;
                 justify-content: center;
@@ -225,6 +224,9 @@
                 height: 193px;
             }
         }
+        .auto-style213 {
+            width: 18%;
+        }
     </style>
 </head>
 <body>
@@ -242,21 +244,14 @@
             <asp:Label ID="Label1" runat="server" CssClass="row-label" Text="Online Campus Selection System" Font-Bold="True"></asp:Label>
              </div>
                     
-             <table class="auto-style2">
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
+             
             
         <table class="auto-style2">
             <tr>
                 <td class="auto-style21">
                     <asp:LinkButton ID="Label2" CssClass="row-label2" runat="server" Text="Home" OnClick="Label2_Click1" />
                 </td>
-                <td class="auto-style21">
+                <td class="auto-style213">
                     <asp:Label ID="Label3" CssClass="row-label2" runat="server" Text="New Company"></asp:Label>
                 </td>
                 <td  class="auto-style21">
@@ -272,20 +267,7 @@
                     <asp:Label ID="Label7" CssClass="row-label2" runat="server" Text="Contact Us"></asp:Label>
                 </td>
             </tr>
-            <tr>
-                <td class="auto-style3">
-                    &nbsp;</td>
-                <td class="auto-style3">
-                    &nbsp;</td>
-                <td  class="auto-style3">
-                    &nbsp;</td>
-                <td  class="auto-style3">
-                    &nbsp;</td>
-                <td  class="auto-style3">
-                    &nbsp;</td>
-                <td  class="auto-style3">
-                    &nbsp;</td>
-            </tr>
+           
         </table>
        
         <table class="auto-style2">
@@ -378,10 +360,10 @@
             </tr>
             <tr>
                 <td  style="width:50%; text-align:center;">
-                    <asp:Button ID="Button1" CssClass="row-label2" style="text-align:center;" runat="server" Text="Apply" Width="114px"  OnClick="Button1_Click"/>
+                    <asp:Button ID="Button4" CssClass="row-label2" style="text-align:center;" runat="server" OnClick="Button4_Click" Text="Logout" />
                 </td>
                 <td style="width:50%; text-align:center;">
-                    <asp:Button ID="Button4" CssClass="row-label2" style="text-align:center;" runat="server" OnClick="Button4_Click" Text="Logout" />
+                    <asp:Button ID="Button1" CssClass="row-label2" style="text-align:center;" runat="server" Text="Apply" Width="114px"  OnClick="Button1_Click"/>
                 </td>
             </tr>
         </table>
