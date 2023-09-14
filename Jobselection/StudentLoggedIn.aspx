@@ -372,7 +372,7 @@
         <table class="auto-style2">
             <tr>
                 <td class="auto-style212">
-                    <asp:Label ID="Label16" runat="server" Text="Enter Correct Portfolio Link"></asp:Label>
+                    <asp:Label ID="Label16" runat="server" Text="Enter Correct Portfolio Link starting from https"></asp:Label>
                 </td>
                 <td class="auto-style212"></td>
             </tr>
