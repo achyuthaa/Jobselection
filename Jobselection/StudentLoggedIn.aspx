@@ -166,7 +166,7 @@
     width:14.28%;
 }
 .my{
-    width:100%;
+    width:90%;
     text-align:center;
 }
 
