@@ -294,7 +294,7 @@
             <tr>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style20">
-                    <asp:LinkButton ID="Label16" CssClass="row-label3" runat="server" Text="Forgot Password?"></asp:LinkButton>
+                    <asp:LinkButton ID="Label16" CssClass="row-label3" runat="server" Text="Forgot Password?" OnClick="Label16_Click"></asp:LinkButton>
                 </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
@@ -304,7 +304,7 @@
                 </td>
                 <td class="auto-style26">&nbsp;</td>
                 <td class="auto-style24">
-                    <asp:LinkButton ID="Label24" CssClass="row-label3" runat="server" Text="Forgot Password?"></asp:LinkButton>
+                    <asp:LinkButton ID="Label24" CssClass="row-label3" runat="server" Text="Forgot Password?" OnClick="Label24_Click"></asp:LinkButton>
                 </td>
             </tr>
         </table>

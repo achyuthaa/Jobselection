@@ -79,6 +79,9 @@
         .auto-style12 {
             height: 34px;
         }
+        .auto-style13 {
+            height: 37px;
+        }
         </style>
     
 </head>
@@ -86,12 +89,7 @@
     <form id="form1" runat="server">
         <div>
             <table class="auto-style2">
-                <tr>
-                    <td>
-                        &nbsp;</td>
-                    <td class="auto-style12">
-                        &nbsp;</td>
-                </tr>
+                
                 <tr>
                     <td>
                     <asp:Label ID="Label3" CssClass="row-label2" runat="server" Text="Student Id"></asp:Label>
@@ -100,26 +98,16 @@
                     <asp:TextBox ID="TextBox1"  CssClass="row-label12"  runat="server" ></asp:TextBox>
                     </td>
                 </tr>
+                
                 <tr>
-                    <td>
-                        &nbsp;</td>
-                    <td>
-                        &nbsp;</td>
-                </tr>
-                <tr>
-                    <td>
+                    <td class="auto-style13">
                     <asp:Label ID="Label4" CssClass="row-label2" runat="server" Text="Student Name"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style13">
                     <asp:TextBox ID="TextBox2"  CssClass="row-label12"  runat="server"></asp:TextBox>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        &nbsp;</td>
-                    <td>
-                        &nbsp;</td>
-                </tr>
+              
                 <tr>
                     <td>
                     <asp:Label ID="Label5" CssClass="row-label2" runat="server" Text="User Name"></asp:Label>
@@ -128,12 +116,7 @@
                     <asp:TextBox ID="TextBox3"  CssClass="row-label12" runat="server" ></asp:TextBox>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        &nbsp;</td>
-                    <td>
-                        &nbsp;</td>
-                </tr>
+               
                 <tr>
                     <td>
                     <asp:Label ID="Label6" CssClass="row-label2" runat="server" Text="Password"></asp:Label>

@@ -18,6 +18,7 @@ namespace Jobselection
         protected void Page_Load(object sender, EventArgs e)
         {
             Label16.Visible = false;
+            TextBox2.Enabled = false;
             
             try
             {

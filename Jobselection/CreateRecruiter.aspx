@@ -142,7 +142,7 @@
         <table class="auto-style2">
             <tr>
                 <td>
-                    <asp:Label ID="Label8" CssClass="row-label2" runat="server" Text="Company Exists"></asp:Label>
+                    <asp:Label ID="Label8" CssClass="row-label2" runat="server" Text="Company Exists Contact Database Administrator"></asp:Label>
                             </td>
             </tr>
         </table>

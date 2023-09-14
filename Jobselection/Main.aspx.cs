@@ -18,6 +18,8 @@ namespace Jobselection
         protected void Page_Load(object sender, EventArgs e)
         {
             //Label1.Text = "Achyuth";
+            Label39.Text = "";
+            Label40.Text = "";
             Label39.Visible = false;
             Label40.Visible = false;
 
@@ -49,6 +51,7 @@ namespace Jobselection
             {
                 
                 Label39.Visible = true;
+                Label39.Text = "Enter username and password";
                // Response.Redirect("Default.aspx");
 
 
@@ -104,6 +107,7 @@ namespace Jobselection
             {
                 //Response.Redirect("Main.aspx");
                 Label40.Visible = true;
+                Label40.Text = "Enter Username and password";
 
             }
             else
@@ -170,6 +174,18 @@ namespace Jobselection
         protected void Label23_Click(object sender, EventArgs e)
         {
             Response.Redirect("CreateRecruiter.aspx");
+        }
+
+        protected void Label16_Click(object sender, EventArgs e)
+        {
+            Label39.Visible = true;
+            Label39.Text = "Contact Database Administrator";
+        }
+
+        protected void Label24_Click(object sender, EventArgs e)
+        {
+            Label40.Visible = true;
+            Label40.Text = "Contact Database Administrator";
         }
     }
 }

@@ -19,6 +19,7 @@ namespace Jobselection
         protected void Page_Load(object sender, EventArgs e)
         {
             Label8.Visible = false;
+          
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -58,6 +59,11 @@ namespace Jobselection
             }
             else
             {
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
+                TextBox5.Text = "";
                 Label8.Visible = true;
             }
         }

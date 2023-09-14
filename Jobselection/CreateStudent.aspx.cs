@@ -38,11 +38,11 @@ namespace Jobselection
                 int i = 0;
                 conn = new SqlConnection(Connection);
                 conn.Open();
-                cmd = new SqlCommand("select Name from StudentLogin", conn);
+                cmd = new SqlCommand("select StudentId,Name from StudentLogin", conn);
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
-                    if (rdr.GetString(0) != TextBox2.Text)
+                    if (rdr.GetString(0) != TextBox1.Text || rdr.GetString(1) != TextBox2.Text)
                     {
                         continue;
                     }
@@ -69,6 +69,11 @@ namespace Jobselection
                 }
                 else
                 {
+                    TextBox1.Text = "";
+                    TextBox2.Text = "";
+                    TextBox3.Text = "";
+                    TextBox4.Text = "";
+                    Label7.Text = "Student Exists Contact Database Administrator";
                     Label7.Visible = true;
                 }
             }

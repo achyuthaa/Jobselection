@@ -324,7 +324,7 @@
         <table class="auto-style2">
             <tr>
                 <td class="auto-style3" style="text-align:center">
-                    <asp:Label ID="Label15" CssClass="row-label2"  runat="server" Text="Portfolio Link"></asp:Label>
+                    <asp:Label ID="Label15" CssClass="row-label2"  runat="server" Text="Portfolio Link/Resume Link"></asp:Label>
                 </td>
                 <td class="auto-style3">
                     <asp:TextBox ID="TextBox3" runat="server"  OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
